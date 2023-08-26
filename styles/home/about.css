@@ -1,0 +1,38 @@
+#about_sec .dual {
+    align-items: flex-start;
+    --div1: 1.4fr;
+    padding: 30px var(--h-pad);
+    border-radius: 10px;
+    background-color: var(--bg-alt);
+}
+
+.info-points {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-points>div {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 15px;
+}
+
+.info-points h4 {
+    text-transform: uppercase;
+}
+
+.info-points num {
+    font-size: 1.3em;
+    width: 2.3em;
+    height: 2.3em;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg);
+}
+
+#about_sec .right p {
+    margin-top: 5px;
+}

@@ -1,0 +1,68 @@
+#tech_sec .dual {
+    align-items: flex-end;
+    gap: 15px;
+}
+
+#tech_sec :is(.left, .right) {
+    gap: 15px;
+}
+
+#tech_sec h1 {
+    margin-bottom: 0;
+}
+
+#tech_sec .left>p {
+    margin-bottom: 10px;
+}
+
+#tech_sec .right>article {
+    transform: translateY(30%);
+}
+
+#tech_sec article {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content 1fr;
+    padding: 20px;
+    background-color: var(--bg-alt);
+    border-radius: 8px;
+    gap: 12px 15px;
+    align-items: center;
+}
+
+#tech_sec article i-con {
+    font-size: 3em;
+    border-radius: 50%;
+    padding: .23em;
+    background-color: var(--bg);
+}
+
+#tech_sec article img {
+    width: 2em;
+    height: 2em;
+}
+
+#tech_sec article h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.7em;
+    text-overflow: ellipsis;
+}
+
+#tech_sec article p {
+    grid-column: span 2;
+}
+
+#tech_sec .btn-row {
+    margin-top: 10px;
+}
+
+#tech_sec a.btn {
+    justify-self: flex-start;
+}
+
+@media (max-width:560px) {
+    #tech_sec .right>article {
+        transform: translateY(0);
+    }
+}

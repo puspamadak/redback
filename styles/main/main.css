@@ -1,0 +1,39 @@
+body {
+	--h-pad: 30px;
+	--v-pad: 50px;
+}
+
+.container {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.dual {
+	display: grid;
+	grid-template-columns: var(--div1, 1fr) var(--div2, 1fr);
+	align-items: center;
+	gap: 30px;
+}
+
+main,
+section {
+	padding: var(--v-pad) var(--h-pad);
+}
+
+main .card {
+	background-color: var(--bg-alt);
+	box-shadow: 0 6px 10px 0 rgb(82 63 105 / 20%);
+	border-radius: 5px;
+}
+
+@media (max-width:560px) {
+	body {
+		--h-pad: 20px;
+		--v-pad: 40px;
+	}
+
+	.dual {
+		grid-template-columns: 1fr;
+	}
+}

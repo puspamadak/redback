@@ -1,0 +1,89 @@
+html {
+	scroll-padding-top: 4em;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	white-space: nowrap;
+	user-select: none;
+	padding: 0 var(--h-pad);
+	background-color: var(--bg-alt);
+	color: var(--fg);
+	box-shadow: 0 5px 5px #0002;
+}
+
+a.logo {
+	display: contents;
+}
+
+a.logo>* {
+	width: auto;
+	height: 1.5em;
+	aspect-ratio: 91/16;
+	align-self: center;
+	margin-right: 20px;
+}
+
+header .btn {
+	padding: 6px 8px;
+	border: 2px solid transparent;
+	transition: all .2s;
+}
+
+header .btn:is(:hover, :focus) {
+	border-color: var(--fg);
+	color: white;
+	outline: none;
+}
+
+header .btn i-con {
+	font-size: 1.2em;
+}
+
+header .tl>li {
+	display: flex;
+	align-items: center;
+	padding: 12px 3px;
+}
+
+header .btn.active {
+	border-color: currentColor;
+}
+
+header .menu .btn.arrow i-con:last-child {
+	font-size: .8em;
+	transition: transform .3s;
+}
+
+header .menu.open>.btn.arrow i-con:last-child {
+	transform: rotate(180deg);
+}
+
+header .menu>:nth-child(2) {
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+header .menu>:nth-child(2) .btn {
+	display: flex;
+	justify-content: flex-start;
+}
+
+header .tl:not(:has(>.open)) {
+	overflow-x: hidden;
+}
+
+#user_menu>.col>:first-child {
+	background-color: #fff2;
+	padding: 10px;
+	gap: 10px;
+	margin: -5px -5px 5px;
+}
+
+#user_menu img {
+	height: 3em;
+}

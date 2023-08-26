@@ -1,0 +1,89 @@
+.field>div.input-box {
+	position: relative;
+	display: flex;
+	padding: 0;
+}
+
+.field :is(input, textarea, select) {
+	flex-grow: 1;
+	padding: var(--pad-v) var(--pad-h);
+}
+
+.field legend {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	max-width: 100%;
+	padding: var(--pad-v) var(--pad-h);
+	display: flex;
+	align-items: center;
+	color: var(--fg-color);
+	transition: all .2s;
+	transition-property: margin, padding, font-size, transform;
+	pointer-events: none;
+	white-space: nowrap;
+}
+
+.field:has(textarea) legend {
+	bottom: auto;
+}
+
+.field.filled legend {
+	bottom: auto;
+	margin: 0 8px;
+	padding: 0 4px;
+	transform: translateY(-50%);
+	font-size: .85em;
+	background-color: var(--bg-color, var(--bg-alt));
+	height: 2px;
+}
+
+.field>.error {
+	display: none;
+	color: #f00;
+	font-size: .9em;
+	margin-top: 3px;
+}
+
+.field.error>.error {
+	display: inline-block;
+}
+
+.field.error>div.input-box {
+	border-color: #f00;
+	animation: error-anim .5s linear 1;
+}
+
+.field .btn {
+	color: var(--color-primary);
+	padding: .5em;
+	font-size: 1.2em;
+}
+
+@keyframes error-anim {
+	0% {
+		transform: translateX(0);
+	}
+
+	10% {
+		transform: translateX(-20px);
+	}
+
+	30% {
+		transform: translateX(20px);
+	}
+
+	50% {
+		transform: translateX(-20px);
+	}
+
+	70% {
+		transform: translateX(20px);
+	}
+
+	80% {
+		transform: translateX(0);
+	}
+}
