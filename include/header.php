@@ -6,8 +6,9 @@
 <header>
 	<div class="container row">
 		<a href="#" class="logo">
-			<img src="images/logo-text.svg" />
+			<img src="images/logo.png" />
 		</a>
+		<div class="grow"></div>
 		<ul class="tl grow row jcr" id="main_menu">
 			<li><a class="btn active" href="#" class="active">Home</a></li>
 			<li><a class="btn" href="#">Athletes</a></li>
@@ -23,5 +24,7 @@
 				<ul id="overflow_menu" class="list"></ul>
 			</li>
 		</ul>
+		<div class="grow"></div>
+		<button id="btn_signin">Sign In</button>
 	</div>
 </header>

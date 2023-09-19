@@ -2,6 +2,7 @@ main {
     min-height: 600px;
     position: relative;
     background-color: black;
+    color: white;
 }
 
 main h1 {

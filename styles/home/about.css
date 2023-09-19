@@ -4,6 +4,7 @@
     padding: 30px var(--h-pad);
     border-radius: 10px;
     background-color: var(--bg-alt);
+    backdrop-filter: blur(15px);
 }
 
 .info-points {

@@ -11,13 +11,9 @@
 
 section h1 {
     margin-bottom: 15px;
-    border-left: 5px solid #bbb8;
+    border-left: 5px solid #fff7;
     padding-left: 10px;
     text-transform: uppercase;
-}
-
-:is(main, section) p {
-    color: #dcdfe1;
 }
 
 section.high {

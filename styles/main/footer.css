@@ -1,6 +1,5 @@
 #footer1 {
-	background-color: #212121;
-	color: #bebebe;
+	background-color: var(--bg-alt);
 	padding: 40px var(--h-pad);
 }
 
@@ -8,17 +7,8 @@ footer a {
 	transition: color .2s;
 }
 
-footer a:is(:hover, :focus) {
-	color: white;
-}
-
-footer a>b {
-	color: white;
-}
-
 footer .link {
 	font-weight: bold;
-	color: var(--bg-alt);
 }
 
 footer .container {
@@ -50,8 +40,7 @@ footer .logo>* {
 }
 
 #footer2 {
-	background-color: #3a454d;
-	color: white;
+	background-color: #fff2;
 	padding: 20px var(--h-pad);
 }
 

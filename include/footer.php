@@ -4,7 +4,7 @@
 	<div class="container row wrap">
 		<div>
 			<a href="#" class="logo">
-				<img src="images/logo-text.svg" />
+				<img src="images/logo.png" />
 			</a>
 			<p>We are a team based in Peterborough. we are confident that we will save you time and money.</p>
 		</div>

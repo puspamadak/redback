@@ -1,7 +1,6 @@
 :root {
-	--bg: #370E4A;
-	--bg-alt: #E9624C;
-	--fg: #ffffff;
-	--color-primary: #005CE5;
+	--bg-alt: #f9f9f999;
+	--fg: #313131;
+	--color-primary: #A089DE;
 	--color-on-primary: #ffffff;
 }

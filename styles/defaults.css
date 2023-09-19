@@ -23,7 +23,7 @@ html {
 }
 
 body {
-	background-color: var(--bg);
+	background: linear-gradient(180deg, #e8746166 0%, #A089DE 100%);
 	color: var(--fg);
 	min-height: 100%;
 }
