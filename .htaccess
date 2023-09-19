@@ -1,0 +1,6 @@
+<filesMatch "\.(js|css|svg|png|jpg|jpeg|gif)$">
+	<ifModule mod_headers.c>
+		Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+		Header set Pragma "no-cache"
+	</ifModule>
+</filesMatch>
