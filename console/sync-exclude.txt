@@ -2,3 +2,4 @@ console/sync.sh
 console/sync-exclude.txt
 vendor/
 config/env.php
+.git*
