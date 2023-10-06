@@ -1,0 +1,15 @@
+select-box .button {
+    display: flex;
+    align-items: center;
+    gap: .3em;
+}
+
+select-box .button .arrow {
+    font-size: .8em;
+    transition: transform .3s;
+    transform: rotate(-180deg);
+}
+
+select-box.open .button .arrow {
+    transform: rotate(0);
+}

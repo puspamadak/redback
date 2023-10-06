@@ -1,0 +1,30 @@
+.count {
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+    align-items: center;
+}
+
+.count>output {
+    line-height: 1;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.count>span {
+    font-size: .8em;
+}
+
+.count-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: 0 30px 30px;
+    justify-content: space-evenly;
+}
+
+.count.top {
+    font-size: 1.5em;
+    align-self: center;
+    margin: 20px 20px 50px;
+}

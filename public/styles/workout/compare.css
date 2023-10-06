@@ -1,0 +1,60 @@
+.count-grid .icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.count-grid .icon>span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    --offset: calc(100% - 20px);
+    width: 50px;
+    height: 6px;
+    border-radius: 1em;
+    background-color: currentColor;
+}
+
+.count-grid .icon>:is(i-con, span).green {
+    background-color: #6BBA6F;
+    color: white;
+}
+
+.count-grid .icon>:is(i-con, span).red {
+    background-color: #E25050;
+    color: white;
+}
+
+.count-grid .icon:first-child>span {
+    left: var(--offset);
+}
+
+.count-grid .icon:nth-child(2)>span {
+    right: var(--offset);
+}
+
+.count-grid .icon i-con {
+    font-size: 1.2em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: var(--color-primary);
+}
+
+.count-grid .icon i-con svg {
+    width: 1.3em;
+    height: 1.3em;
+}
+
+#compare_sec .count.top {
+    margin: 50px 20px 30px;
+}
+
+#compare_sec .count-grid {
+    row-gap: 30px;
+}

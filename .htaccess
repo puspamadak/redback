@@ -1,6 +1,15 @@
-<filesMatch "\.(js|css|svg|png|jpg|jpeg|gif)$">
+<filesMatch "\.(js|css)$">
 	<ifModule mod_headers.c>
 		Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
 		Header set Pragma "no-cache"
 	</ifModule>
 </filesMatch>
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	# Stop processing if already in the /public directory
+	RewriteRule ^public/ - [L]
+
+	# Route all other requests
+	RewriteRule (.*) index.php [L,QSA]
+</IfModule>

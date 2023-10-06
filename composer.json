@@ -1,0 +1,16 @@
+{
+	"name": "puspam/redback-mobile",
+	"description": "Workout app",
+	"type": "app",
+	"autoload": {
+		"psr-4": {
+			"App\\": "app/"
+		}
+	},
+	"authors": [
+		{
+			"name": "Puspam Adak",
+			"email": "puspitaadak9876@gmail.com"
+		}
+	]
+}

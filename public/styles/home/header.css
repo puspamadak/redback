@@ -1,0 +1,87 @@
+html {
+	scroll-padding-top: 4em;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	white-space: nowrap;
+	user-select: none;
+	padding: 0 var(--h-pad);
+	background-color: var(--bg-alt);
+	color: var(--fg);
+	backdrop-filter: blur(20px);
+	border-radius: 0 0 10px 10px;
+}
+
+a.logo {
+	display: contents;
+}
+
+a.logo>* {
+	width: auto;
+	height: 2.5em;
+	align-self: center;
+	margin-right: 20px;
+}
+
+header .btn {
+	padding: .3em .7em;
+	border: 2px solid transparent;
+	transition: all .2s;
+}
+
+header .btn:is(:hover, :focus, .active) {
+	border-color: currentColor;
+	outline: none;
+}
+
+header .btn i-con {
+	font-size: 1.2em;
+}
+
+header .tl>* {
+	display: flex;
+	align-items: center;
+	padding: 12px 3px;
+}
+
+header .dropdown .btn.arrow i-con:last-child {
+	font-size: .8em;
+	transition: transform .3s;
+}
+
+header .dropdown.open>.btn.arrow i-con:last-child {
+	transform: rotate(180deg);
+}
+
+header .dropdown>:nth-child(2) {
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 5px;
+}
+
+header .dropdown>:nth-child(2)>ul {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+header .dropdown>:nth-child(2) .btn {
+	display: flex;
+	justify-content: flex-end;
+}
+
+header .tl:not(:has(>.open)) {
+	overflow-x: hidden;
+}
+
+#btn_signin {
+	background-color: #f98875bf;
+	font-style: italic;
+	padding: 5px 2em;
+	font-size: 1.3em;
+	margin: 0 calc(15px - var(--h-pad)) 10px 6px;
+	border-radius: 0 0 8px 8px;
+}

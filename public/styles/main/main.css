@@ -1,0 +1,22 @@
+body {
+    background: linear-gradient(180deg, #e8746166 0%, #A089DE 100%);
+    --h-pad: 30px;
+    --v-pad: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.content {
+    padding: var(--v-pad) var(--h-pad);
+}
+
+@media (max-width:500px) {
+    body {
+        --h-pad: 15px;
+        --v-pad: 15px;
+    }
+}

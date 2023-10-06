@@ -1,0 +1,33 @@
+.dropdown {
+    display: block;
+    position: relative;
+}
+
+.dropdown>:nth-child(2) {
+    padding: 4px 0;
+    border-radius: 4px;
+    position: absolute;
+    top: 100%;
+    min-width: 100%;
+    background-color: var(--bg);
+    color: var(--fg);
+    box-shadow: 0 3px 8px #0004;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.dropdown:not(.open)>:nth-child(2) {
+    display: none;
+}
+
+.dropdown>:nth-child(2) .btn {
+    justify-content: flex-start;
+}
+
+.dropdown>:first-child>* {
+    width: 100%;
+}
+
+.field .dropdown>:first-child>.btn:focus {
+    outline: none;
+}

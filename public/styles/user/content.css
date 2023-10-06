@@ -1,0 +1,49 @@
+main {
+    background-color: #0005;
+    color: white;
+    border-radius: 8px;
+}
+
+main .slides {
+    display: flex;
+    flex-grow: 1;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+main .slides>* {
+    width: 100%;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+main .dots {
+    align-self: center;
+    display: flex;
+    gap: 10px;
+    padding: 20px 30px 30px;
+}
+
+main .dots label {
+    width: 10px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1px solid;
+    transition: background-color .2s;
+}
+
+main .dots input {
+    position: fixed;
+    left: -200vw;
+    appearance: none;
+}
+
+main .dots label:has(input:checked) {
+    background-color: currentColor;
+}
+
+.btn.action {
+    margin: 20px 15px 40px;
+    font-size: 1.3em;
+}
