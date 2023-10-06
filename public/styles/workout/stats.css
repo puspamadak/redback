@@ -1,0 +1,15 @@
+#stats_sec .controls {
+    padding: 10px 10px 0;
+}
+
+#stats_sec .month-opt .button {
+    --br: 4px;
+}
+
+#stats_sec .month-opt>:last-child {
+    right: 0;
+}
+
+#stats_sec .month-opt>:nth-child(2) .btn {
+    --br: 0;
+}

@@ -1,0 +1,16 @@
+form {
+    gap: 15px;
+    margin: 10px 10px 20px;
+}
+
+form .desc {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+form>.btn {
+    margin-top: 25px;
+    align-self: center;
+    --pad-h: 3em;
+}

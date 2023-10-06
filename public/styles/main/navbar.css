@@ -1,0 +1,24 @@
+#navbar {
+    padding: 8px 15px;
+    background-color: var(--bg);
+    border-radius: 10em;
+    justify-content: space-around;
+    overflow: auto;
+}
+
+#navbar a {
+    width: 2.2em;
+    font-size: 1.4em;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .2s;
+}
+
+#navbar a:is(:hover, :focus) {
+    background-color: #0001;
+    outline: none;
+}
